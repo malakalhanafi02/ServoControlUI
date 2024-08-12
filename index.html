@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Servo Control</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body>
+    <h1>ESP32 Servo Control</h1>
+    <div class="control-panel">
+        <label for="slider">Servo Position: <span id="servoPos">90</span></label>
+        <input type="range" id="slider" min="0" max="180" value="90" oninput="updateServo(this.value)">
+    </div>
+    <script>
+      function updateServo(val) {
+        document.getElementById("servoPos").innerText = val;
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/servo?angle=" + val, true);
+        xhr.send();
+      }
+    </script>
+  </body>
+</html>
