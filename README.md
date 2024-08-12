@@ -2,7 +2,9 @@
 
 This project demonstrates how to control a servo motor using an ESP32 microcontroller via a web-based interface. The web interface allows users to adjust the servo's position using a slider, which sends commands to the ESP32 over Wi-Fi.
 
-https://github.com/user-attachments/assets/2f771b4d-19d3-42fd-b6fc-a4c091dcac82
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2f771b4d-19d3-42fd-b6fc-a4c091dcac82" alt="Image Description">
+</p>
 
 ## Components:
 - ESP32
