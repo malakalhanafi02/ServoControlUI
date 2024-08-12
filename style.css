@@ -1,0 +1,108 @@
+
+/* Taken from an old project */
+
+body {
+    font-family: 'Roboto', sans-serif; /* font family 'Roboto' */
+    background-color: #1a1a1a; /* dark background */
+    color: #00ccff; /* light blue text */
+    display: flex; /* flexbox layout */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+/* Main heading (h1) */
+h1 {
+    color: #00ccff; 
+    text-shadow: 0 0 10px #00ccff;
+}
+
+/* Styles for the control panel container */
+.control-panel {
+    background-color: #333; 
+    padding: 30px; /* padding */
+    border: 2px solid #00ccff; 
+    border-radius: 15px; 
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.5); 
+    text-align: center; 
+}
+
+/* Styles for the slider */
+input[type=range] {
+    width: 80%; 
+    margin: 20px 0;
+}
+
+/* Styles for the buttons inside the control panel */
+button {
+    margin: 15px; 
+    padding: 15px 30px; 
+    font-size: 20px; 
+    cursor: pointer; 
+    background-color: #444; 
+    color: #00ccff; 
+    border: 2px solid #00ccff; 
+    border-radius: 10px; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+/* Styles for buttons on hover */
+button:hover {
+    background-color: #555; /* Slightly lighter background color */
+    transform: scale(1.1); /* Slightly increase size */
+}
+
+/* Styles for buttons when pressed (active) */
+button:active {
+    background-color: #666; /* Lighter background color */
+    transform: scale(1.5); /* Increase size */
+}
+
+/* Styles for the pop-up container */
+.modal {
+    display: none; /* Hide the pop-up by default */
+    position: fixed; /* Fixed position */
+    left: 0; 
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    transition: opacity 1s ease-in-out; 
+}
+
+/* Styles for the pop-up content */
+.modal .modal-content {
+    background-color: #333; 
+    margin: 15% auto; 
+    padding: 10px; 
+    width: 30%; 
+    max-width: 250px; 
+    color: #00ccff; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.5); 
+    text-align: center; 
+    border: 2px solid #00ccff; 
+}
+
+/* Styles for the close button inside the pop-up */
+.modal .close {
+    color: #00ccff; 
+    float: right; 
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Styles for the close button on hover and focus */
+.modal .close:hover,
+.modal .close:focus {
+    color: #fff; 
+    cursor: pointer; 
+}
+
+/* Styles for the fade-out effect */
+.fade-out {
+    opacity: 0;
+}
