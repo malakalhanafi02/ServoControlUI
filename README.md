@@ -19,11 +19,16 @@ This project demonstrates how to control a servo motor using an ESP32 microcontr
 ## Software:
 - PlatformIO IDE on VS Code
 - The Code for the ESP32 can be found here:
-  - [main.cpp](src/main.cpp) 
+  - [main.cpp](main.cpp) 
 - You can find the HTML and CSS files here:
-  - [index.html](data/index.html) 
-  - [style.css](data/style.css)
-
+  - [index.html](index.html) 
+  - [style.css](style.css)
+- Add this in the `platformio.ini` file:
+  - ```bash
+    lib_deps = 
+      ESP Async WebServer
+      ESP32Servo
+    ```
 
 ## Wiring:
 - Servo's signal wire to GPIO 15 on the ESP32.
